@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+    <title>2048小游戏</title>
+    <style>
+        body,div,ul,li,span{border: 0;padding: 0;margin: 0;}
+        body{background: #d2d2d2}
+        li{list-style: none;}
+        #box{width: 484px; height: 484px; border-radius: 16px; overflow: hidden; margin: 0 auto;  border: 16px solid #b8af9e; border-right: none;border-bottom: none; position: relative}
+        #box ul{ width: 484px; height: 484px; background: #ccc0b2; position: relative}
+        #box li{ float: left; width: 105px; height: 105px; border: 16px solid #b8af9e;border-left: none;border-top: none; font-size: 30px; text-align: center; line-height: 105px; font-weight: bolder; }
+        #box span{width: 105px; height: 105px;font-size: 60px; text-align: center; line-height: 105px; font-weight: bolder;  display: block; position: absolute;
+            -webkit-transform: scale(1,1);
+            -moz-transform: scale(1,1);
+            -ms-transform: scale(1,1);
+            -o-transform: scale(1,1);
+            transform: scale(1,1);
+            -webkit-transition: all 0.3S;
+            -moz-transition: all 0.3S;
+            -ms-transition: all 0.3S;
+            -o-transition: all 0.3S;
+            transition: all 0.3S;
+        }
+
+        #box .span2{ background: #eee4da;color: #7c736a}
+        #box .span4{ background: #ece0c8;color: #7c736a}
+        #box .span8{ background: #f2b179;color: #fff7eb}
+        #box .span16{ background: #f59563;color: #fff7eb}
+        #box .span32{ background: #f59563;color: #fff7eb}
+        #box .span64{ background: #f65d3b;color: #fff7eb}
+        #box .span128{ background: #fffcaf;color: #7c736a}
+        #box .span256{ background: #fffcaf;color: #7c736a}
+        #box .span512{ background: #fffcaf;color: #7c736a; }
+        #box .span1024{ background: #fffcaf;color: #7c736a;font-size: 40px}
+        #box .span2048{ background: #fffcaf;color: #7c736a;font-size: 40px}
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="box-ul">
+
+    </ul>
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>
